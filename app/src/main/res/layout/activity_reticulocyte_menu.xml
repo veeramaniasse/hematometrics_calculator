@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReticulocyteMenu"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_200">
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:hint="Reticulocuyte"
+        android:textSize="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="90dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"
+        android:background="@drawable/bordercolor">
+
+
+    </TextView>
+    <Button
+        android:id="@+id/reticulocytecount"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:backgroundTint="#AED1CF"
+        android:text="Reticulocyte Count"
+        android:textColor="@color/black"
+        android:textAllCaps="false">
+        ">
+
+    </Button>
+    <Button
+        android:id="@+id/absoluteretic"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:backgroundTint="#AED1CF"
+        android:text="Absolute Reticulocyte Count"
+        android:textAllCaps="false"
+        android:textColor="@color/black">
+
+    </Button>
+    <Button
+        android:id="@+id/corrected_reticulocyte"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:backgroundTint="#AED1CF"
+        android:text="Corrected Reticulocyte Count"
+        android:textColor="@color/black"
+        android:textAllCaps="false">
+
+    </Button>
+    <Button
+        android:id="@+id/reticulocyte_production"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:backgroundTint="#AED1CF"
+        android:text="Reticulocyte proliferation Index"
+        android:textColor="@color/black"
+        android:textAllCaps="false">
+
+    </Button>
+
+
+</LinearLayout>

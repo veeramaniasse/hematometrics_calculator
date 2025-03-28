@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="PlateletCountFormula">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_200">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:gravity="center"
+        android:background="@drawable/bordercolor"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Platelet Count"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        >
+
+    </TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:elevation="70dp"
+        android:background="#C95BDC"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#CECECE"
+            >
+
+            <LinearLayout
+                android:layout_width="210dp"
+                android:layout_height="101dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/platelet"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="No. of platelet in 10 oil immersion field[100*]"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="________________________________"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:background="#CECECE"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:text="x 20000"
+                android:background="#CECECE"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="CALCULATE"
+        android:textColor="@color/black">
+
+    </Button>
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textSize="18dp"
+        android:background="#CECECE"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="SAVE"
+        android:textColor="@color/black"
+        android:visibility="gone">
+
+    </Button>
+</LinearLayout>
+
+
+

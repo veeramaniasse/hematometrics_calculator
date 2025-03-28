@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="CorrectedReticulocyteCount">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_200">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="150dp"
+                android:background="#AED1CF"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Corrected Reticulocyte Count  using pcv"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal">
+
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/purple"
+                android:layout_marginTop="30dp"
+                android:elevation="70dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#CECECE"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="101dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/reticulocyte1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:hint="Reticulocyte%"
+                                android:textColor="@color/black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:text="x"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/pcv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:hint="PCV[%]of patient"
+                                android:textColor="@color/black"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="______________________________________"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/rbcCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:hint="Average Normal PCV[%]"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_gravity="center"-->
+                    <!--                        android:text="x 10"-->
+                    <!--                        android:textColor="@color/black"-->
+                    <!--                        android:textSize="18dp" />-->
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/purple_200"
+                android:text="CALCULATE"
+                android:textColor="@color/white">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/output"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#CECECE"
+                android:text="output"
+                android:visibility="gone"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/purple_200"
+                android:text="SAVE"
+                android:visibility="gone"
+                android:textColor="@color/white">
+
+            </Button>
+
+            <TextView
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="150dp"
+                android:background="#AED1CF"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Corrected Reticulocyte Count  using Hb"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/purple"
+                android:elevation="70dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#CECECE">
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="101dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical"
+                    android:background="#CECECE">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/reticulocyte2"
+                            android:layout_width="120dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:hint="reticulocyte%"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:text="x"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/pcv2"
+                            android:layout_width="150dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:hint="Hb[%]of patient "
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="______________________________________"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/Rbccount2"
+                        android:layout_width="300dp"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:hint="Average Normal Hb[%] " />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/calculate2"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/purple_200"
+                android:text="CALCULATE"
+                android:textColor="@color/white">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/output2"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#CECECE"
+                android:text="output"
+                android:visibility="gone"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/save2"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/purple_200"
+                android:text="SAVE"
+                android:visibility="gone"
+                android:textColor="@color/white">
+
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+

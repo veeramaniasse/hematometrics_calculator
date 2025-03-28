@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="WBCcountformula">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_200">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="150dp"
+        android:background="@drawable/bordercolor"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="WBC Count"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="normal">
+
+    </TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="0dp"
+        android:elevation="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CECECE"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/wbc"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="Number of WBC in High
+power field[40*]"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="______________________________________"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/value"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#CECECE"
+                    android:gravity="center"
+                    android:text="10" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#CECECE"
+                android:text="x 2000"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="CALCULATE"
+        android:textColor="@color/white">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#CECECE"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/purple_500"
+        android:textSize="18dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="SAVE"
+        android:textColor="@color/white"
+        android:visibility="gone">
+
+    </Button>
+
+
+</LinearLayout>
+
+
+

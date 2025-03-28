@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Aboutus">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar."
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_200">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center"
+            android:text="About Us"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            android:textStyle="normal"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="90dp"
+        android:src="@drawable/aboutmicro"
+        />
+
+
+    <TextView
+        android:layout_width="331dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="The Hematology Calculator app streamlines blood-related calculations for medical professionals. It includes features like RBC indices, absolute reticulocyte count, and platelet correction formulas. The user-friendly interface ensures quick access to essential hematological parameters, enhancing efficiency in clinical settings.Additionally, the app may provide reference ranges and interpretation guidelines, aiding healthcare practitioners in making informed decisions based on calculated values."
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal"/>
+
+
+</LinearLayout>

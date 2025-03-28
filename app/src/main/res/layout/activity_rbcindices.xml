@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RBCIndices"
+    android:background="@color/white">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_200"/>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:hint="RBC Indices"
+        android:textSize="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="70dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"
+        android:background="@drawable/bordercolor">
+    </TextView>
+
+    <Button
+        android:id="@+id/mcv"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:backgroundTint="#AED1CF"
+        android:text="MCV"
+        android:textColor="@color/black">
+
+    </Button>
+    <Button
+        android:id="@+id/mch"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:backgroundTint="#AED1CF"
+        android:text="MCH"
+        android:textColor="@color/black">
+
+    </Button>
+    <Button
+        android:id="@+id/mchc"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:backgroundTint="#AED1CF"
+        android:text="MCHC"
+        android:textColor="@color/black">
+
+    </Button>
+</LinearLayout>
